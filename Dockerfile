@@ -9,7 +9,7 @@
 #########################################
 FROM tenable/terrascan:1.19.9 AS terrascan
 FROM alpine/terragrunt:1.14.1 AS terragrunt
-FROM dotenvlinter/dotenv-linter:3.3.0 AS dotenv-linter
+FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.60.0 AS tflint
 FROM ghcr.io/yannh/kubeconform:v0.7.0 AS kubeconfrm
 FROM alpine/helm:4.0.4 AS helm
