@@ -27,7 +27,7 @@ FROM scalameta/scalafmt:v3.10.2 AS scalafmt
 FROM zricethezav/gitleaks:v8.30.0 AS gitleaks
 FROM yoheimuta/protolint:0.56.4 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.01.12-alpine AS clj-kondo
-FROM dart:3.5.1-sdk AS dart
+FROM dart:3.10.7-sdk AS dart
 FROM mcr.microsoft.com/dotnet/sdk:8.0.401-alpine3.20 AS dotnet-sdk
 FROM mcr.microsoft.com/powershell:7.5-alpine-3.20 AS powershell
 
