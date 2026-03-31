@@ -18,7 +18,7 @@ FROM golangci/golangci-lint:v2.11.3 AS golangci-lint
 FROM goreleaser/goreleaser:v2.14.3 AS goreleaser
 FROM hadolint/hadolint:v2.14.0-alpine AS dockerfile-lint
 FROM registry.k8s.io/kustomize/kustomize:v5.8.1 AS kustomize
-FROM hashicorp/terraform:1.14.7 AS terraform
+FROM hashicorp/terraform:1.14.8 AS terraform
 FROM koalaman/shellcheck:v0.11.0 AS shellcheck
 FROM mstruebing/editorconfig-checker:v3.6.1 AS editorconfig-checker
 FROM mvdan/shfmt:v3.13.0 AS shfmt
