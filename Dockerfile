@@ -14,7 +14,7 @@ FROM ghcr.io/terraform-linters/tflint:v0.62.0 AS tflint
 FROM ghcr.io/yannh/kubeconform:v0.7.0 AS kubeconfrm
 FROM alpine/helm:4.1.4 AS helm
 FROM golang:1.26.3-alpine AS golang
-FROM golangci/golangci-lint:v2.12.1 AS golangci-lint
+FROM golangci/golangci-lint:v2.12.2 AS golangci-lint
 FROM goreleaser/goreleaser:v2.15.4 AS goreleaser
 FROM hadolint/hadolint:v2.14.0-alpine AS dockerfile-lint
 FROM registry.k8s.io/kustomize/kustomize:v5.8.1 AS kustomize
